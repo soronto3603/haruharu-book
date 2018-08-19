@@ -8,5 +8,6 @@ import Header from './components/Header'
 
 ReactDOM.render(<Header />,document.getElementById('header'));
 ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('footer'));
 
 registerServiceWorker();

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class Footer extends Component {
   render() {
     const style={
       backgroundColor:'black',
       padding:'16px',
       color:'white',
-      fontSize:'12px',
+      fontSize:'12px'
       position:'fixed',
-      top:'0px',
+      bottom:'0px',
       left:'0px'
     };
     return (
@@ -19,4 +19,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Footer;
