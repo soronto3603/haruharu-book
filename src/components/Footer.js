@@ -14,7 +14,15 @@ class Footer extends Component {
     };
     return (
       <div style={style}>
-      Header
+        <a>
+          Home
+        </a>
+        <a>
+          Lib
+        </a>
+        <a>
+          Prof
+        </a>
       </div>
     );
   }
