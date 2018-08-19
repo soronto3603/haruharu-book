@@ -8,6 +8,7 @@ class Header extends Component {
       color:'white',
       fontSize:'12px',
       position:'fixed',
+      width:'100%',
       top:'0px',
       left:'0px'
     };

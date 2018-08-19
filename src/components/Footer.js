@@ -6,8 +6,9 @@ class Footer extends Component {
       backgroundColor:'black',
       padding:'16px',
       color:'white',
-      fontSize:'12px'
+      fontSize:'12px',
       position:'fixed',
+      width:'100%',
       bottom:'0px',
       left:'0px'
     };

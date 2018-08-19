@@ -6,8 +6,10 @@ import registerServiceWorker from './registerServiceWorker';
 
 import Header from './components/Header'
 
+import Footer from './components/Footer'
+
 ReactDOM.render(<Header />,document.getElementById('header'));
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<App />, document.getElementById('footer'));
+ReactDOM.render(<Footer />, document.getElementById('footer'));
 
 registerServiceWorker();
