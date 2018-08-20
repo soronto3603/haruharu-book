@@ -12,9 +12,21 @@ class Header extends Component {
       top:'0px',
       left:'0px'
     };
+    const topmargin={
+      backgroundColor:'black',
+      padding:'16px',
+      color:'white',
+      fontSize:'12px',
+    }
+
     return (
-      <div style={style}>
-      Header
+      <div>
+        <div style={style}>
+        {this.props.title}
+        </div>
+        <div style={topmargin}>
+        {this.props.title}
+        </div>
       </div>
     );
   }
