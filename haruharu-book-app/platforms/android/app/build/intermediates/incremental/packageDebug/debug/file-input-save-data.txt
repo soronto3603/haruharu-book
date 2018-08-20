@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Aug 20 14:59:44 KST 2018
+#Mon Aug 20 16:08:41 KST 2018
 25.file=D\:\\Workstation\\haruharu-book\\haruharu-book-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xxxhdpi-v4\\screen.png
 25.base=D\:\\Workstation\\haruharu-book\\haruharu-book-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 22.set=ASSET

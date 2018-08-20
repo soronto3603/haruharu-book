@@ -16,9 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var source="http://13.209.21.164:3000";
+
 var app = {
     // Application Constructor
-    var source=""
 
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -29,8 +30,9 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-
-    },
+      document.getElementById('iframe').src=source;
+      console.log(source);
+    }
 };
 
 app.initialize();
