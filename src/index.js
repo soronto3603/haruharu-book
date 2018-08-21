@@ -14,7 +14,7 @@ import App from './App';
 
 import Footer from './components/Footer'
 
-ReactDOM.render(<Header title={"123"} />,document.getElementById('header'));
+ReactDOM.render(<Header title={"하루하루"} />,document.getElementById('header'));
 ReactDOM.render(
     <BrowserRouter>
       <Contents />

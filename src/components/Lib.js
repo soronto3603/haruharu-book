@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import '../css/lib.css'
+import { Link } from 'react-router-dom';
 
 import { Container, Row, Col } from 'react-grid-system';
+
+import Img from 'react-image'
 
 class Lib extends React.Component {
     render() {
         return (
-            <Container fluid>
-              <Row>
-                <Col md={4}>asd</Col>
-                <Col md={8}>dfg</Col>
-              </Row>
-            </Container>
+          <div className="float_btn">
+            <Link to="search">+</Link>
+          </div>
         );
     }
 }
