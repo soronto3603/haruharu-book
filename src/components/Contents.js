@@ -28,7 +28,7 @@ class Contents extends Component {
     return (
       <div>
         <div>
-          <Route path="/home" component={Home}/>
+          <Route path="/home" render={<Home asdf={asd} />)/>
           <Route path="/lib" component={Lib}/>
           <Route path="/prof" component={Prof}/>
           <Route path="/search" component={Search}/>
