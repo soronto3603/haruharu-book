@@ -35,7 +35,174 @@
         <title>Hello World</title>
     </head>
     <body>
-      <iframe id='iframe' src="" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace=0></iframe>
+      <div id="Main" class="pagecontent">
+        <div id="Home" class="tabcontent">
+          <div class="wise-saying">
+            <img src="img\steve-jobs.png">
+          </div>
+          <div class="my-result-title">나의 성과</div>
+          <div id="My-Result">
+            <div class=margin></div>
+            <div id="Readed-book">
+              <center>
+                <div class="progress-bar">
+                  <div class="left red">50%<</div>
+                  <div class=right>
+                    <div>2</div>
+                    <div class="progress-bar-small red" style="width:40%;"></div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </center>
+            </div>
+            <div class=margin></div>
+            <div id="Almost-Reading-book">
+              <center>
+                <div class="progress-bar">
+                  <div class="left yellow">50%<</div>
+                  <div class=right>
+                    <div>2</div>
+                    <div class="progress-bar-small yellow" style="width:40%;"></div>
+                    <div class="clear"></div>
+                  </div>
+
+                </div>
+              </center>
+            </div>
+            <div class=margin></div>
+            <div id="Reading-book">
+              <center>
+                <div class="progress-bar">
+                  <div class="left green">50%<</div>
+                  <div class=right>
+                    <div>2</div>
+                    <div class="progress-bar-small green" style="width:40%;"></div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </center>
+            </div>
+          </div>
+
+        </div>
+        <div id="Book" class="tabcontent">
+          <div>내 책 목록들</div>
+          <center>
+            <div id=items>
+              <div class=margin></div>
+              <div class=item>
+                <div class=left>
+                  <img src="img\book_cover_1.PNG">
+                </div>
+                <div class=right>
+                  <div class="title">Django unchained</div>
+                  <div class="sub_title">Western, Drama</div>
+                  <div class="progress_bar">
+                    <div class="progress">
+                      <div class="progress-color yellow" style="width:65%">65%</div>
+                    </div>
+                    <div class="progress-click blue">click</div>
+                  </div>
+                  <div class="more_button">more info</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class=margin></div>
+              <div class=item>
+                <div class=left>
+                  <img src="img\book_cover_2.PNG">
+                </div>
+                <div class=right>
+                  <div class="title">Fight Club</div>
+                  <div class="sub_title">Drama</div>
+                  <div class="progress_bar">
+                    <div class="progress">
+                      <div class="progress-color red" style="width:25%">25%</div>
+                    </div>
+                    <div class="progress-click blue">click</div>
+                  </div>
+                  <div class="more_button">more info</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class=margin></div>
+              <div class=item>
+                <div class=left>
+                  <img src="img\book_cover_3.PNG">
+                </div>
+                <div class=right>
+                  <div class="title">Obilivion</div>
+                  <div class="sub_title">Action, Mystery</div>
+                  <div class="progress_bar">
+                    <div class="progress">
+                      <div class="progress-color green" style="width:99%;">100%</div>
+                    </div>
+                    <div class="progress-click blue">click</div>
+                  </div>
+                  <div class="more_button">more info</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class=margin></div>
+            </div>
+            <div class="add_new_book">
+              새 책 추가하기
+            </div>
+          </center>
+        </div>
+        <div id="Profile" class="tabcontent">
+          <div style="width:100%;height:30px;"></div>
+          <center>
+            <div id="My-achievement"></div>
+            <div id="medals">
+              <div class="medal"></div>
+            </div>
+          </center>
+
+        </div>
+        <!-- Tab -->
+        <div class=navigator>
+          <!-- Home -->
+          <div>
+            <img src="img\iconmonstr-home-6-240.png" onclick="openTab('Home')">
+          </div>
+          <!-- Book -->
+          <div>
+            <div>
+              <img src="img\iconmonstr-book-2-240.png" onclick="openTab('Book')">
+            </div>
+          </div>
+          <!-- Profile -->
+          <div>
+            <div>
+              <img src="img\iconmonstr-user-1-240.png" onclick="openTab('Profile')">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Temp" class="pagecontent">
+        <div id="AddBook">
+          <div class="header">
+            <div class="backbutton">뒤로가기</div>
+            <div class="title">새 책 등록하기</div>
+            <div class="clear"></div>
+          </div>
+          <div class="content">
+            <center>
+              <div>표지</div>
+              <div>책이름</div>
+              <div><input type=text /></div>
+              <div>저자</div>
+              <div><input type=text /></div>
+              <div>읽기 시작한 날짜</div>
+              <div><input type=text /></div>
+              <!-- 가격 출판사, 등등등등.. -->
+              <div class="submit">확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <script type="text/javascript" src="cordova.js"></script>
       <script type="text/javascript" src="js/index.js"></script>
     </body>

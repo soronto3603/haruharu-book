@@ -8,3 +8,194 @@ iframe{
     overflow:hidden;
     position: absolute;
 }
+.navigator{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  background-color:#d9d9d9;
+  height:60px;
+  width:100%;
+
+}
+.navigator div{
+  display:inline-block;
+  width:33%;
+  height:inherit;
+  margin-left: -5px;
+}
+.navigator img{
+  height:40px;
+  position:relative;
+  left:50px;
+  top:10px;
+}
+.tabcontent{
+  display:none;
+}
+.wise-saying{
+
+}
+.wise-saying img{
+  height:inherit;
+  width:100%;
+}
+.progress-bar{
+  width:80%;
+  height:60px;
+
+}
+.progress-bar .left{
+  width:60px;
+  height:inherit;
+  display:inline-block;
+  line-height:60px;
+}
+.progress-bar .right{
+  width:calc(100% - 60px);
+  background-color:#e9e9e9;
+  display:inline-block;
+  margin-left:-5px;
+  height:inherit;
+  line-height:60px;
+}
+.red{
+  background-color:#FF0039;
+  color:white;
+}
+.yellow{
+  background-color:#F5A62D;
+  color:white;
+}
+.blue{
+  background-color:#3692FF;
+  color:white;
+}
+.green{
+  background-color:#7ED321;
+  color:white;
+}
+.black{
+  background-color:#333333;
+  color:white;
+}
+#Home #My-Result .margin{
+  margin-top:10px;
+  width:100%;
+  height:1px;
+}
+.progress-bar-small{
+  height:10px;
+  position: relative;
+  bottom: 10px;
+  float:left;
+}
+.clear{
+  clear:both;
+}
+#Book .item{
+  width:90%;
+  height:90px;
+}
+#Book .margin{
+  margin-top:47px;
+  width:100%;
+  height:1px;
+}
+#Book .item .left{
+  width:80px;
+  height:120px;
+  display:inline-block;
+}
+#Book .item .left img{
+  width:inherit;
+  height:inherit;
+}
+#Book .item .right{
+  width:calc(100% - 114px);
+  height:90px;
+  display:inline-block;
+  position: relative;
+  top: -15px;
+}
+
+#Book .item .right div{
+
+}
+#Book .item .right .title{
+  font-size:22px;
+  text-align:left;
+}
+#Book .item .right .sub_title{
+  color:#696969;
+  text-align:left;
+
+}
+#Book .item .right .more_button{
+  background-color:#e9e9e9;
+  color:white;
+  height:40px;
+  width:100%;
+  line-height:40px;
+}
+#Book .item .right .progress_bar{
+  height:20px;
+}
+.progress_bar .progress{
+    width:70%;
+    background-color:#e9e9e9;
+    float:left;
+}
+.progress_bar .progress .progress-color{
+  float:left
+}
+#Book .item .right .progress_bar .progress-click{
+  display:inline-block;
+  float:right;
+  width:30%;
+}
+#Book .add_new_book{
+  width:80%;
+  border:1px solid black;
+}
+#Book .add_new_book:hover{
+  background-color:black;
+  color:white;
+}
+#Profile #My-achievement{
+  width:80%;
+}
+#Profile #My-achievement div{
+  display:inline-block;
+  height:20px;
+}
+#Profile #medals{
+  width:80%;
+  height:auto;
+}
+#Profile #medals .medal{
+  width:33%;
+  height:120px;
+  background-color:rgba(0,0,0,0.5);
+}
+#Temp #AddBook .header{
+  height:40px;
+  background-color:#232323;
+}
+#Temp #AddBook .header .backbutton{
+  color:white;
+}
+#Temp #AddBook .header .title{
+  font-size:14px;
+  font-weight: bold;
+  float:right;
+  color:white;
+}
+#Temp #AddBook .content .submit{
+  background-color:blue;
+  width:120px;
+  height:40px;
+  border-radius:15px;
+  text-align:center;
+  line-height: 40px;
+  color:white;
+}
