@@ -9,6 +9,12 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "ronto.haruharu.book"
+    },
+    "cordova-plugin-sqlite-2": {
+      "PACKAGE_NAME": "ronto.haruharu.book"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "ronto.haruharu.book"
     }
   },
   "dependent_plugins": {}

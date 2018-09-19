@@ -1,6 +1,16 @@
+@font-face{
+  font-family:'BaminFont';
+  src:url('BMYEONSUNG_ttf.ttf') format('truetype');
+}
+
 *{
+  -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+  font-family: 'BaminFont', Fallback, sans-serif;
   margin:0px;
   padding:0px;
+}
+body{
+  background-color:#f9f9f9;
 }
 iframe{
     height:100%;
@@ -8,37 +18,50 @@ iframe{
     overflow:hidden;
     position: absolute;
 }
-.navigator{
+#Main .navigator{
   position:fixed;
   left:0px;
   bottom:0px;
-  background-color:#d9d9d9;
-  height:60px;
+  background-color:#ffffff;
+  height:42px;
   width:100%;
-
+  box-shadow: 0 -1px 4px 1px rgba(216, 216, 216, 0.5);
 }
-.navigator div{
+#Main .navigator .tab{
   display:inline-block;
   width:33%;
   height:inherit;
-  margin-left: -5px;
+  margin-left: -2.5px;
 }
-.navigator img{
-  height:40px;
-  position:relative;
-  left:50px;
-  top:10px;
+#Main .navigator .tab .text{
+  text-align: center;
+  position: relative;
+  top: 12px;
+}
+#Main .navigator .tab .text.active{
+  color:#595959;
+  font-size:15px;
+}
+#Main .navigator .tab .text.no-active{
+  color:#a7a7a7;
+  font-size:12px;
+}
+#Main .navigator .tab .bar.active{
+  width: 14px;
+  height: 0.5px;
+  background-color: #595959;
+  border-radius: 5px;
+  margin-left: 44%;
+  position: relative;
+  top: 10px;
+}
+#Main .navigator .tab .bar.no-active{
+  display:none;
 }
 .tabcontent{
   display:none;
 }
-.wise-saying{
 
-}
-.wise-saying img{
-  height:inherit;
-  width:100%;
-}
 .progress-bar{
   width:80%;
   height:60px;
@@ -58,12 +81,16 @@ iframe{
   height:inherit;
   line-height:60px;
 }
+.gray{
+  background-color:#979797;
+  color:white;
+}
 .red{
-  background-color:#FF0039;
+  background-color:#df6363;
   color:white;
 }
 .yellow{
-  background-color:#F5A62D;
+  background-color:#ffa300;
   color:white;
 }
 .blue{
@@ -71,18 +98,14 @@ iframe{
   color:white;
 }
 .green{
-  background-color:#7ED321;
+  background-color:#5bd800;
   color:white;
 }
 .black{
   background-color:#333333;
   color:white;
 }
-#Home #My-Result .margin{
-  margin-top:10px;
-  width:100%;
-  height:1px;
-}
+
 .progress-bar-small{
   height:10px;
   position: relative;
@@ -199,3 +222,217 @@ iframe{
   line-height: 40px;
   color:white;
 }
+#Temp #AddBook .image{
+  width:120px;
+  height:120px;
+  background-color:#e9e9e9;
+}
+
+#Main #Home .my-progressive{
+  width: 90%;
+  margin: 5%;
+  height: 250px;
+  margin-top: 30px;
+}
+
+#Main #Home .my-progressive .contents{
+  height:inherit;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color:#ffffff;
+  border-radius:5px;
+  box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+}
+
+#Main #Home .my-progressive .contents .small_ronud{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  z-index: 30;
+}
+#Main #Home .my-progressive .contents .small_round_point{
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  background-color: #ffffff;
+  left: 3.4px;
+  top: 3.5px;
+  z-index: 31;
+}
+#Main #Home .my-progressive .contents .small_round_point.before{
+  left: 4.4px;
+}
+#Main #Home .my-progressive .contents .draw{
+  display: inline-block;
+  position: relative;
+}
+#Main #Home .my-progressive .contents .line{
+  height: 2px;
+  display:absolute;
+  z-index:20;
+}
+
+#Main #Home .my-progressive .contents .big_ronud{
+  position:absolute;
+  width:20px;
+  height:20px;
+  border-radius:10px;
+  z-index:30;
+}
+#Main #Home .my-progressive .contents .big_round_point{
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  left: 5.6px;
+  top: 6.4px;
+  z-index: 31;
+}
+#Main #Home .my-progressive .contents .big_round_point.before{
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  left: 6.6px;
+  top: 6.4px;
+  z-index: 31;
+}
+#Main #Home .my-progressive .contents .tag_container{
+  position:absolute;
+}
+#Main #Home .my-progressive .contents .tag_container .tag{
+  width: 44px;
+  height: 12px;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 2px;
+  position: relative;
+  top: -12px;
+  left: -23px;
+  text-align: center;
+}
+#Main #Home .my-progressive .contents .tag_container .tag_line{
+  width: 2px;
+  height: 20px;
+  position: relative;
+  top: -14px;
+  left: -1px;
+}
+#Main #Home .my-progressive .contents .tag_container .arrow{
+  position: relative;
+  top: -23px;
+  left: -5px;
+}
+#Main #Home .my-progressive .contents .tag_container .arrow img{
+  width: 10px;
+  transform: rotate(180deg);
+}
+#Main #Home .my-progressive .contents #Text-book{
+  position:relative;
+  top:40px;
+}
+#Main #Home .my-progressive .contents #Text-book .margin{
+  width:69.5px;
+  height:1px;
+}
+#Main #Home .my-progressive .contents #Red-book{
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+#Main #Home .my-progressive .contents #Text-book{
+  position: relative;
+  top: 75px;
+  left: 20px;
+}
+#Main #Home .header .hamburger-menu{
+  width: 20px;
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
+#Main #Home .header .sub-title{
+  color: #bababa;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  font-size: 11px;
+}
+#Main #Home .header .sub-title-bar{
+  width: 110px;
+  height: 1px;
+  background-color: #bababa;
+}
+#Main #Home .my-progressive .contents #Text-book .draw .text{
+  position:absolute;
+}
+#Main #Home .my-progressive .contents #Green-Yellow-book{
+  position: relative;
+  top: 100px;
+  left: 20px;
+}
+#Main #Home .middle-title{
+  width:80%;
+  margin:10%;
+  margin-bottom:5%;
+}
+#Main #Home .middle-title .font1{
+  display:inline-block;
+  color:#4f4f4f;
+  font-size:14px;
+}
+#Main #Home .middle-title .font2{
+  display:inline-block;
+  font-size:18px;
+  color:#979797;
+}
+#Main #Home .middle-title .font3{
+  display:inline-block;
+  font-size:10px;
+  color:#979797;
+}
+#Main #Home .bottom-items{
+  width:90%;
+  margin:5%;
+  margin-top:0%;
+}
+#Main #Home .bottom-items .item .panel{
+  background-color:#ffffff;
+  width:100%;
+  height:84px;
+  position:relative;
+  top:15px;
+  box-shadow: 0 2px 4px 0 rgba(204, 204, 204, 0.5);
+  border-radius: 3px;
+}
+#Main #Home .bottom-items .item .panel .image{
+
+  position: relative;
+  left: 15px;
+  top: -15px;
+  width:70px;
+  height:88px;
+}
+#Main #Home .bottom-items .item .panel .button{
+  float:right;
+  width:57px;
+  height:84px;
+  position: relative;
+  top: -88px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  line-height:84px;
+  text-align:center;
+  font-size:15px;
+}
+#Main #Home .bottom-items .margin{
+  width:100%;
+  height:35px;
+}
+/* #Main #Home .bottom-items .explain{
+  position:absolute;
+} */
