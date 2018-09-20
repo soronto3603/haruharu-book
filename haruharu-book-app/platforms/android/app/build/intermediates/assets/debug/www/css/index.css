@@ -410,7 +410,6 @@ iframe{
   border-radius: 3px;
 }
 #Main #Home .bottom-items .item .panel .image{
-
   position: relative;
   left: 15px;
   top: -15px;
@@ -433,6 +432,35 @@ iframe{
   width:100%;
   height:35px;
 }
-/* #Main #Home .bottom-items .explain{
+#Main #Home .bottom-items .explain{
   position:absolute;
-} */
+}
+#Main #Home .bottom-items .explain .explain-inner{
+  position:relative;
+  top:-70px;
+  left:100px;
+}
+#Main #Home .bottom-items .explain .text1{
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #595757;
+}
+#Main #Home .bottom-items .explain .text2 div{
+  display:inline-block;
+  font-size: 7px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #8a8a8a;
+}
+#Main #Home .bottom-items .explain .line{
+  height:1px;
+  width:50px;
+  background-color:#ebebeb;
+}
