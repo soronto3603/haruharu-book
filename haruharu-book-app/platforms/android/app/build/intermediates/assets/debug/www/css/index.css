@@ -436,12 +436,12 @@ iframe{
   position:absolute;
 }
 #Main #Home .bottom-items .explain .explain-inner{
-  position:relative;
-  top:-70px;
-  left:100px;
+  position: relative;
+  top: -83px;
+  left: 100px;
 }
 #Main #Home .bottom-items .explain .text1{
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -451,7 +451,7 @@ iframe{
 }
 #Main #Home .bottom-items .explain .text2 div{
   display:inline-block;
-  font-size: 7px;
+  font-size: 10px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -460,7 +460,33 @@ iframe{
   color: #8a8a8a;
 }
 #Main #Home .bottom-items .explain .line{
-  height:1px;
-  width:50px;
+  height: 2px;
+  width: 150px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+#Main #Home .bottom-items .explain .text3{
+  font-size: 9px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #8a8a8a;
+  position: relative;
+  top: 5px;
+}
+#Main #Home .bottom-items .explain .progress_bar{
+  width:150px;
+  height:8px;
+  border-radius:10px;
   background-color:#ebebeb;
+  position: relative;
+  top: 8px;
+}
+#Main #Home .bottom-items .explain .progress_bar .color{
+  background-color: #ffa300;
+  border-radius: 10px;
+  width: 50%;
+  height: 100%;
 }

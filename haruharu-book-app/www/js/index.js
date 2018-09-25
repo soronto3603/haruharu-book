@@ -8,6 +8,13 @@ function openPage(pagename,child_tab){
   }else if(pagename=="Temp"){
 
   }
+
+  // 네비게이터 탭 글꼴
+  var navitext=document.getElementsByClassName("navi-text");
+  for(var i=0;i<navitext.length;i++){
+
+  }
+
   document.getElementById(pagename).style.display="block";
   openTab(child_tab);
 }
